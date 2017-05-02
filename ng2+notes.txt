@@ -1,0 +1,56 @@
+The different things we need to build angular2 application.
+
+1.Download and install node
+(node comes with tool npm)
+2.I.D.E. or textEditor
+
+
+package.json
+-------------
+application need library or modules for their functioning and these are specified in the package.json,
+tsconfig.json
+--------------
+This file contains configuration of typescript compiler generating javascript files.
+Since the browser can understand javascript only so the typescript file needs to be converted in javascript.
+systemjs.config
+---------------
+This file deals with loading of module and default file extension.
+
+index.html
+-----------
+1.Loading the libraries
+2.Configure syste.js
+3.Display the application(Use the root component's selector metadata property in the body tag to instantiate the root component class)
+
+
+
+
+
+******
+Use the CLI tool to quickly build Angular Application
+
+
+We can start with angular in following high level steps with angular cli...
+1.Set up the devlopment enviroment.
+2.Create a new project and skeleton app.
+3.Serve the application.
+4.Edit the application.
+
+1.Set up the devlopment enviroment.
+-----------------------------------
+Install node.js and npm (if doesn't hve installed)
+If have installed then Verify that you are running at least node 6.9.x and npm 3.x.x by running node -v and npm -v in a terminal/console window. Older versions produce errors, but newer versions are fine.
+
+Then install angular cli globally 
+$npm install -g @angular/cli 
+
+2.Create a new project
+-----------------------
+Run the below command to create a new project
+$ng new <app-name>
+3.Serve the application
+------------------------
+Go to the project directory and launch the server.
+$cd app-name
+$ng serve --open
+The ng serve command launches the server,watches your files,and rebuilds the app as you make changes to any of the files.
